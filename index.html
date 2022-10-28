@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
 </head>
-<body>
+<body onload=todayDate()>
     <div class="main">
         <nav>
             <h2 class="logo">Portfo<span>lio</span></h2>
@@ -40,7 +40,7 @@
     <!--About section-->
     <section class="about">
         <div class="me">
-            <img src="images/Me.jpeg">
+            <img id="update" src="images/Me.jpeg" onmouseover="update(this)" onmouseleave="undo()">
             <div class="about-text">
                 <h2>About </h2>
                 <h5>Developer <span>& Designer</span></h5>
@@ -103,20 +103,24 @@
     </div>
 
 <div class="contact-me">
-    <p>Let Me Get you a beautiful website</p>
+    <p>Muhammad Arham</p>
+    <p>Lets build something together.</p>
+    <a href="#"><span>muhammad.arham1019@gmail.com</span></a>
+     
     <a class="button-two" href="contact.html">Hire Me</a>
 </div>
 
 <footer>
-    <p>Muhammad Arham</p>
-    <p>Lets build something together.For further information feel free to contact me</p>
+    <!-- <p>Lets build something together.For further information feel free to contact me</p> -->
     <div class="social">
         <a href="#"><i class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-github"></i></a>
         <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
     </div>
-    <p class="end"> Copyright by Muhammad Arham</p>
+    <p class="end">Muhammad Arham Copyright &copy; <em id="date"></em></p>
 </footer>
-   
+
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
