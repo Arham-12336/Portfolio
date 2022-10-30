@@ -12,10 +12,15 @@ function todayDate(){
   //   document.getElementById("me").innerHTML=element.alt;
   // }
 function update(element){
-  var x=document.getElementById('update');
-  x.style.backgroundImage=URL('images/me-hover.png');
+  var x=document.getElementById("preview");
+  x.style.background="url(images/me-hover.png)";
+  console.log("hello")
+
 }
 function undo(){
-  var x=document.getElementById('update');
-  x.style.background=null;
+  var x=document.getElementById('preview');
+  console.log("undo")
 }
+let menu =document.querySelector("#menu-icon");
+let navbar =document.querySelector(".header");
+menu.clientHeight
